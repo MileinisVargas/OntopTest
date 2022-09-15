@@ -1,11 +1,25 @@
-<div class=>
+<div class="filterContainer">
   <div class="inputSearch">
-    <app-input></app-input>
+    <app-input placeholder="Search" class="input1" [icon]="true"></app-input>
   </div>
-  <div class="buttonFilter">
-    <app-button></app-button>
+  <div class="button">
+    <app-button text="Filter" img="filter" class="button1"></app-button>
   </div>
-  <div class="Select">
-    <app-select></app-select>
+  <div class="button">
+    <app-button text="New hire" img="plus" class="button2"></app-button>
+  </div>
+</div>
+<div class="selectContainer">
+  <app-date-picker class="datePicker"></app-date-picker>
+  <!-- <div class="datePickerContainer">
+  </div> -->
+  <div class="select1">
+    <app-select text="Contract Type" class="select1"></app-select>
+  </div>
+  <div class="input2">
+    <app-input placeholder="Contractor name" class="input2"></app-input>
+  </div>
+  <div class="select2">
+    <app-select text="Status" class="select2"></app-select>
   </div>
 </div>

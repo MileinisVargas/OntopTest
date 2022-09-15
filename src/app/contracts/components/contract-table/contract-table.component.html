@@ -1,0 +1,29 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Contractor name</th>
+      <th scope="col">Type</th>
+      <th scope="col">Start date</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Status</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>
+        <img class="userImg" src="/assets/img/img1.png" />
+        {{ user.contractorName }}
+      </td>
+      <td>{{ user.type }}</td>
+      <td>{{ user.startDate }}</td>
+      <td>{{ user.amount }}</td>
+      <td>{{ user.status }}</td>
+      <td>
+        <button>
+          <img src="/assets/svg/3dots.svg" />
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

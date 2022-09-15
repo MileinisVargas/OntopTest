@@ -29,9 +29,54 @@
   line-height: 36px;
 }
 
+// en el app-filters
 .filters {
   width: 100%;
 
   display: flex;
   justify-content: center;
+}
+.container_table {
+  margin-top: 30px;
+}
+
+.popup {
+  position: absolute;
+  border-radius: 50px;
+  right: 0%;
+  bottom: 0%;
+  height: 79px;
+  width: 79px;
+  text-align: center;
+  /* 500 */
+
+  background: #ff5a70;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+
+  img {
+    margin-top: 17px;
+  }
+}
+.container_popup {
+  position: fixed;
+  z-index: 10;
+  bottom: 2%;
+  right: 2%;
+  width: 79px;
+  height: 79px;
+  border-radius: 49%;
+  background: #ff5a70;
+  cursor: pointer;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+.popup2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 79px;
+  width: 79px;
+  // transition: transform 100ms linear, opacity 80ms linear;
+  // opacity: 1;
+  // transform: rotate(0deg) scale(1);
 }

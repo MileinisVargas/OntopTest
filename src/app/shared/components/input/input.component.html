@@ -1,3 +1,9 @@
-<div class="input">
-  <input type="search" />
+<div class="input-wrapper">
+  <input
+    id="input-search"
+    type="text"
+    [class]="class"
+    placeholder="{{ placeholder }}"
+  />
+  <img *ngIf="icon" class="input-icon" src="/assets/svg/search.svg" />
 </div>

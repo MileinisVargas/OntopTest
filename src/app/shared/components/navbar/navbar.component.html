@@ -1,0 +1,23 @@
+<div class="navbar_ontop">
+  <div class="navbar_container">
+    <div class="logo">
+      <img src="/assets/img/ontop.png" alt="" />
+    </div>
+
+    <div
+      *ngFor="let item of items"
+      class="navbar_item"
+      [ngClass]="{ selected: item === items[0] }"
+    >
+      <img src="/assets/svg/{{ item }}.svg" alt="" />
+      {{ item | titlecase }}
+
+      <img [src]="arrowDown(item)" alt="" />
+    </div>
+
+    <div class="user_profile">
+      <div class="divider"></div>
+      <img class="userImg" src="/assets/img/img1.png" />
+    </div>
+  </div>
+</div>
