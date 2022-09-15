@@ -4,15 +4,15 @@
   background: #ffffff;
   display: flex;
   max-width: 1440px;
-
   z-index: 5;
   box-shadow: 0 4px 24px #00000014;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
+  display: block;
 }
 
 .navbar_container {
-  width: 90%;
+  width: 95%;
   max-width: 1440px;
   height: 100%;
 
@@ -36,12 +36,7 @@
   font-size: 18px;
   line-height: 24px;
   cursor: pointer;
-  /* identical to box height, or 133% */
-
   letter-spacing: 0.18px;
-
-  /* 500 */
-
   color: #898989;
 }
 
