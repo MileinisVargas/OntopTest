@@ -19,10 +19,10 @@ select {
   background-color: transparent;
 }
 
-// .select:after {
-//   // ...existing styles
-//   justify-self: end;
-// }
+.select0 {
+  max-width: 266px;
+  padding-left: 40px;
+}
 
 .select1 {
   max-width: 206px;
@@ -32,10 +32,6 @@ select {
   max-width: 190px;
 }
 
-img {
-  width: 14px;
-  height: 8px;
-}
 .input-wrapper {
   position: relative;
 }
@@ -44,4 +40,15 @@ img {
   right: 12px;
   top: 50%;
   transform: translateY(-50%);
+  width: 14px;
+  height: 8px;
+}
+
+.date-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
 }

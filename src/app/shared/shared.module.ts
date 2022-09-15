@@ -5,22 +5,20 @@ import { InputComponent } from './components/input/input.component';
 import { SelectComponent } from './components/select/select.component';
 import { DatePickerComponent } from './components/date-picker/date-picker.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { StatusComponent } from './components/status/status.component';
+
+const components = [
+  InputComponent,
+  ButtonComponent,
+  SelectComponent,
+  DatePickerComponent,
+  NavbarComponent,
+  StatusComponent,
+];
 
 @NgModule({
-  declarations: [
-    InputComponent,
-    ButtonComponent,
-    SelectComponent,
-    DatePickerComponent,
-    NavbarComponent,
-  ],
+  declarations: [components],
   imports: [CommonModule],
-  exports: [
-    InputComponent,
-    ButtonComponent,
-    SelectComponent,
-    DatePickerComponent,
-    NavbarComponent,
-  ],
+  exports: [components],
 })
 export class SharedModule {}

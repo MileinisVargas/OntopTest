@@ -1,0 +1,7 @@
+<div class="status" [ngClass]="status">
+  <p>
+    <img *ngIf="status !== 'Active'" src="/assets/svg/dot.svg" />
+    <img *ngIf="status === 'Active'" src="/assets/svg/dot_Active.svg" />
+    {{ status }}
+  </p>
+</div>

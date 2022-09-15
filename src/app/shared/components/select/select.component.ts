@@ -8,6 +8,7 @@ import { SelectTypes } from '../../interfaces/interfaces';
 })
 export class SelectComponent implements OnInit {
   @Input() text = '';
+  @Input() calendarIcon = false;
   @Input() class: SelectTypes = 'select1';
 
   constructor() {}

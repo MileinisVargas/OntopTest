@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { StatusTypes } from 'src/app/shared/interfaces/interfaces';
 
 interface User {
   contractorName: string;
   type: string;
   startDate: string;
   amount: string;
-  status: string;
+  status: StatusTypes;
 }
 
 @Component({

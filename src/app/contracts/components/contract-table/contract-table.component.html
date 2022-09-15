@@ -18,7 +18,7 @@
       <td>{{ user.type }}</td>
       <td>{{ user.startDate }}</td>
       <td>{{ user.amount }}</td>
-      <td>{{ user.status }}</td>
+      <td><app-status [status]="user.status"></app-status></td>
       <td>
         <button>
           <img src="/assets/svg/3dots.svg" />
