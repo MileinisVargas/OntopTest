@@ -3,19 +3,15 @@
   height: 108px;
   background: #ffffff;
   display: flex;
-  // max-width: 1440px;
   z-index: 5;
   box-shadow: 0 4px 24px #00000014;
   align-items: center;
-  // justify-content: center;
   display: block;
 }
 
 .navbar_container {
   width: 95%;
-  // max-width: 1440px;
   height: 100%;
-
   display: flex;
   justify-content: space-between;
 }
@@ -70,6 +66,7 @@
   height: 65px;
   margin-left: 40px;
 }
+
 .usericon {
   width: 18px;
   height: 11.11px;
@@ -89,6 +86,7 @@
   .menuLabel {
     padding-left: 40px;
   }
+
   .navbar_item {
     font-size: 14px;
     margin-left: 4px;
@@ -99,6 +97,7 @@
   .navbar_ontop {
     height: 61px;
   }
+
   .logo {
     margin-left: 21px;
     margin-top: 20px;
@@ -117,12 +116,14 @@
   .items_container {
     display: none;
   }
+
   .menuLabel {
     display: block;
     border: none;
     background-color: inherit;
     align-self: center;
   }
+
   .navbar_item {
     position: fixed;
     width: 100%;
@@ -137,6 +138,7 @@
     margin: 50px 0;
     line-height: 30px;
   }
+
   .user_profile {
     position: fixed;
     display: none;
