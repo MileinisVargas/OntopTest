@@ -3,7 +3,7 @@
   height: 108px;
   background: #ffffff;
   display: flex;
-  max-width: 1440px;
+  // max-width: 1440px;
   z-index: 5;
   box-shadow: 0 4px 24px #00000014;
   align-items: center;
@@ -13,7 +13,7 @@
 
 .navbar_container {
   width: 95%;
-  max-width: 1440px;
+  // max-width: 1440px;
   height: 100%;
 
   display: flex;
@@ -30,7 +30,7 @@
 .navbar_item {
   margin-left: 66px;
   margin-top: 42px;
-  font-family: "Aileron";
+  font-family: "Aileron", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -38,6 +38,12 @@
   cursor: pointer;
   letter-spacing: 0.18px;
   color: #898989;
+}
+
+.items_container {
+  justify-content: center;
+  height: 100%;
+  display: flex;
 }
 
 .selected {
@@ -69,4 +75,70 @@
   height: 11.11px;
   margin-top: 30px;
   margin-left: 13px;
+}
+
+#flexMenu {
+  display: none;
+}
+
+.menuLabel {
+  display: none;
+}
+
+@media (max-width: 1040px) {
+  .menuLabel {
+    padding-left: 40px;
+  }
+  .navbar_item {
+    font-size: 14px;
+    margin-left: 4px;
+  }
+}
+
+@media (max-width: 850px) {
+  .navbar_ontop {
+    height: 61px;
+  }
+  .logo {
+    margin-left: 21px;
+    margin-top: 20px;
+  }
+
+  .logo img {
+    width: 79px;
+    height: 19px;
+  }
+
+  .menuLabel img {
+    width: 37.57px;
+    height: 35px;
+  }
+
+  .items_container {
+    display: none;
+  }
+  .menuLabel {
+    display: block;
+    border: none;
+    background-color: inherit;
+    align-self: center;
+  }
+  .navbar_item {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    top: 80px;
+    left: 100%;
+    text-align: center;
+    transition: all 0.5s;
+
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .user_profile {
+    position: fixed;
+    display: none;
+  }
 }

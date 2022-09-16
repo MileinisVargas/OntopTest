@@ -7,7 +7,7 @@ select {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 
-  font-family: "Aileron";
+  font-family: "Aileron", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -16,7 +16,12 @@ select {
   color: #898989;
 
   appearance: none;
-  background-color: transparent;
+  background-color: #ffffff;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden !important;
+  padding-right: 40px;
 }
 
 .select0 {
@@ -51,4 +56,14 @@ select {
   transform: translateY(-50%);
   width: 18px;
   height: 18px;
+}
+
+@media (max-width: 600px) {
+  .select2 {
+    max-width: 100%;
+  }
+
+  .select1 {
+    max-width: 100%;
+  }
 }

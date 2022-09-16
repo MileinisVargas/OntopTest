@@ -10,21 +10,25 @@
   gap: 18px;
 }
 
+.button_container {
+  display: contents;
+}
 .selectContainer {
   width: 100%;
   display: flex;
-  gap: 28px;
   margin-top: 28px;
 }
 
 .select0 {
   max-width: 266px;
   width: 100%;
+  margin-right: 28px;
 }
 
 .select1 {
   max-width: 206px;
   width: 100%;
+  margin-right: 29px;
 }
 
 .select2 {
@@ -35,4 +39,77 @@
 .input2 {
   max-width: 328px;
   width: 100%;
+  margin-right: 32px;
+}
+
+.clear_filters {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .filterContainer {
+    gap: 0px;
+    margin-top: 45px;
+    display: block;
+  }
+
+  .inputSearch {
+    max-width: 739px;
+    width: 330px;
+  }
+
+  .button_container {
+    display: flex;
+    gap: 30px;
+    margin-top: 17px;
+  }
+  .selectContainer {
+    display: block;
+    text-align: -webkit-center;
+    margin-top: 30px;
+  }
+
+  .select0 {
+    max-width: 231px;
+    margin-right: 0px;
+  }
+
+  .select1 {
+    max-width: 231px;
+    margin-right: 0px;
+    padding-top: 19px;
+  }
+
+  .select2 {
+    max-width: 231px;
+    padding-top: 19px;
+  }
+
+  .input2 {
+    max-width: 231px;
+    margin-right: 0px;
+    padding-top: 19px;
+  }
+
+  .clear_filters {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 19px;
+    position: absolute;
+    margin-left: 10px;
+    .clear_filters_content {
+      display: contents;
+
+      img {
+        width: 15px;
+        height: 15px;
+      }
+      p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 7px;
+        color: #ff5a70;
+      }
+    }
+  }
 }

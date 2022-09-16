@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-family: "Aileron", sans-serif;
+}
+
+@media (max-width: 600px) {
+  body {
+    min-height: 1525px;
+  }
+}

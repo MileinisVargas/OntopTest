@@ -1,18 +1,23 @@
-<div class="navbar_ontop">
+<div class="navbar_ontop grid grid-cols-10">
   <div class="navbar_container">
     <div class="logo">
       <img src="/assets/img/ontop.png" alt="" />
     </div>
+    <input class="menu" type="checkbox" value="" id="flexMenu" />
+    <label class="menuLabel" for="flexMenu">
+      <img src="/assets/svg/menu.svg" />
+    </label>
+    <div class="items_container">
+      <div
+        *ngFor="let item of items"
+        class="navbar_item"
+        [ngClass]="{ selected: item === items[0] }"
+      >
+        <img src="/assets/svg/{{ item }}.svg" alt="" />
+        {{ item | titlecase }}
 
-    <div
-      *ngFor="let item of items"
-      class="navbar_item"
-      [ngClass]="{ selected: item === items[0] }"
-    >
-      <img src="/assets/svg/{{ item }}.svg" alt="" />
-      {{ item | titlecase }}
-
-      <img [src]="arrowDown(item)" alt="" />
+        <img [src]="arrowDown(item)" alt="" />
+      </div>
     </div>
 
     <div class="user_profile">
@@ -22,3 +27,45 @@
     </div>
   </div>
 </div>
+
+<!-- Funciona el Menu -->
+<!-- <nav>
+  <input class="menu" type="checkbox" value="" id="flexMenu" />
+  <label class="menuLabel" for="flexMenu">
+    <img src="/assets/svg/menu.svg" />
+  </label>
+  <ul
+    *ngFor="let item of items"
+    class="navbar_item"
+    [ngClass]="{ selected: item === items[0] }"
+  >
+    <li>
+      <a
+        ><img src="/assets/svg/{{ item }}.svg" alt="" />
+        {{ item | titlecase }}
+        <img [src]="arrowDown(item)" alt=""
+      /></a>
+    </li>
+  </ul>
+</nav> -->
+
+<!-- Ejm para hacerlo -->
+<!-- <nav>
+  <input class="form-check-input" type="checkbox" value="" id="flexCheck" />
+  <label class="form-check-label" for="flexCheck">
+    <img src="/assets/svg/menu.svg" alt="" />
+  </label>
+  <a href="#" class="enlace">
+    <img src="/assets/img/ontop.png" alt="" class="logo" />
+  </a>
+  <ul *ngFor="let item of items" [ngClass]="{ selected: item === items[0] }">
+    <li>
+      <a href="#"
+        ><img src="/assets/svg/{{ item }}.svg" alt="" />
+        {{ item | titlecase }}
+        <img [src]="arrowDown(item)" alt=""
+      /></a>
+    </li>
+  </ul>
+</nav>
+<section></section> -->

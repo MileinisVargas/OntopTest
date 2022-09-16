@@ -2,7 +2,7 @@
   width: 162px;
   height: 24px;
   border-radius: 20px;
-  font-family: "Aileron";
+  font-family: "Aileron", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 10px;
@@ -30,4 +30,22 @@ p {
 
 img {
   padding-right: 5px;
+}
+
+@media (max-width: 600px) {
+  .status {
+    font-weight: 700;
+    font-size: 8.33333px;
+    line-height: 10px;
+  }
+
+  .status.Active {
+    width: 112px;
+    height: 19px;
+  }
+  .status.Signature.pending {
+    width: 124px;
+    height: 18.37px;
+    font-size: 8.02469px;
+  }
 }

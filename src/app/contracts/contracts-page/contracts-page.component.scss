@@ -7,22 +7,26 @@
 
 .contracts_container {
   width: 100%;
-  max-width: 1440px;
+  // max-width: 1440px;
   background: #f9f9f9;
   left: 180px;
+}
+.content {
+  margin-left: 180px;
 }
 
 .tittle {
   width: 100%;
   height: 72px;
   margin-top: 62px;
+  padding-right: 65px;
   color: #000000;
 
   display: flex;
   justify-content: center;
 }
 .tittle_h1 {
-  font-family: "Aileron";
+  font-family: "Aileron", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -79,4 +83,31 @@
   // transition: transform 100ms linear, opacity 80ms linear;
   // opacity: 1;
   // transform: rotate(0deg) scale(1);
+}
+
+@media (max-width: 600px) {
+  .content {
+    margin-left: 0px;
+  }
+  .tittle {
+    height: 30px;
+    margin-top: 48px;
+    padding-right: 0px;
+  }
+
+  .container {
+    padding-left: 23px;
+    padding-right: 19px;
+  }
+
+  .tittle_h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .container_popup {
+    z-index: 1;
+    margin-top: 21px;
+    margin-right: 20px;
+    margin-bottom: 28px;
+  }
 }

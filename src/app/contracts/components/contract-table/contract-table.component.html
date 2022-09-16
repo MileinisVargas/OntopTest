@@ -53,3 +53,62 @@
     </tr>
   </tbody>
 </table>
+
+<div class="table_mobile">
+  <div *ngFor="let user of users; let i = index" class="row_table">
+    <div class="tr gray">
+      <div class="td">Contractor name</div>
+      <div class="td">{{ user.contractorName }}</div>
+    </div>
+    <div class="tr">
+      <div class="td">Type</div>
+      <div class="td">{{ user.type }}</div>
+    </div>
+    <div class="tr gray">
+      <div class="td">Start date</div>
+      <div class="td">{{ user.startDate }}</div>
+    </div>
+    <div class="tr">
+      <div class="td">Amount</div>
+      <div class="td">{{ user.amount }}</div>
+    </div>
+    <div class="tr gray">
+      <div class="td">Status</div>
+      <div class="td"><app-status [status]="user.status"></app-status></div>
+    </div>
+    <div class="tr">
+      <div class="td">Actions</div>
+      <div class="td">
+        <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="/assets/svg/3dots_horizontal.svg" />
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" href="#"
+              ><img class="userImg" src="/assets/svg/edit.svg" />Edit</a
+            >
+          </li>
+          <li class="center"><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" href="#"
+              ><img class="userImg" src="/assets/svg/sign.svg" />Sign</a
+            >
+          </li>
+          <li class="center"><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" href="#"
+              ><img class="userImg" src="/assets/svg/documents.svg" />View
+              summary</a
+            >
+          </li>
+          <li class="center"><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" href="#"
+              ><img class="userImg" src="/assets/svg/delete.svg" />Delete</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
