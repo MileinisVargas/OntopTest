@@ -53,7 +53,7 @@ td:nth-child(6) {
 
   .table_mobile {
     display: block;
-    padding-top: 1px;
+    // padding-top: 1px;
   }
   .row_table {
     width: 330px;
@@ -62,11 +62,10 @@ td:nth-child(6) {
     mix-blend-mode: normal;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-
     padding-top: 10px;
     padding-left: 15px;
     padding-right: 13px;
-    margin-top: 31px;
+    margin-top: 21px;
   }
 
   .tr.gray {

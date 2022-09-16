@@ -8,6 +8,7 @@
   width: 100%;
   display: flex;
   gap: 18px;
+  margin-top: 12px;
 }
 
 .button_container {
@@ -17,7 +18,7 @@
 .selectContainer {
   width: 100%;
   display: flex;
-  margin-top: 28px;
+  margin-top: 23px;
 }
 
 .select0 {
@@ -67,7 +68,7 @@
   .selectContainer {
     display: block;
     text-align: -webkit-center;
-    margin-top: 30px;
+    // margin-top: 30px;
   }
 
   .select0 {
@@ -93,18 +94,24 @@
   }
 
   .clear_filters {
+    // display: inline-flex;
+    // align-items: center;
+    // margin-top: 19px;
+    // position: absolute;
+    // margin-left: 10px;
     display: inline-flex;
-    align-items: center;
+    align-items: baseline;
     margin-top: 19px;
-    position: absolute;
-    margin-left: 10px;
+    max-width: 231px;
+    width: 100%;
+    justify-content: flex-end;
 
     .clear_filters_content {
       display: contents;
 
       img {
-        width: 15px;
-        height: 15px;
+        width: 13px;
+        height: 13px;
       }
       p {
         margin-top: 0px;
